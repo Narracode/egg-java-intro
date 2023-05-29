@@ -3,7 +3,6 @@
  */
 
 package com.egg.ejerciciosjava;
-
 import java.util.Scanner;
 
 /**
