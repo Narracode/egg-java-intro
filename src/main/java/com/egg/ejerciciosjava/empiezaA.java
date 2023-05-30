@@ -15,6 +15,7 @@ public class empiezaA {
         String inicio = frase.substring(0,1);
         confirma(inicio.equals("A"));
     }
+    
     public static void confirma(boolean c) {
         if (c) {
             System.out.println("CORRECTO");

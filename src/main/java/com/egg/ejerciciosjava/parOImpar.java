@@ -15,10 +15,13 @@ public class parOImpar {
         Scanner leer = new Scanner(System.in);
         System.out.print("Escribe un numero entero > ");
         int num = leer.nextInt();
-        if (esPar(num)) {
-            System.out.println("El numero es par");
+        confirma(esPar(num));
+    }
+    public static void confirma(boolean c) {
+        if (c) {
+            System.out.println("CORRECTO");
         } else {
-            System.out.println("El numero es impar");
+            System.out.println("INCORRECTO");
         }
     }
     public static boolean esPar(int n) {

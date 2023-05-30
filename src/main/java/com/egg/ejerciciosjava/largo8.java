@@ -13,11 +13,14 @@ public class largo8 {
         System.out.println("Ingresa una frase > ");
         String frase = leer.nextLine();
         
-        if (frase.length() == 8) {
+        confirma(frase.length() == 8);
+        }
+        
+        public static void confirma(boolean c) {
+        if (c) {
             System.out.println("CORRECTO");
         } else {
             System.out.println("INCORRECTO");
-        }
         }
     }
 }
