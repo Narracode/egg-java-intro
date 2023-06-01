@@ -24,5 +24,4 @@ public class cuadradoN {
             System.out.println("");
         }
     }
-    
 }

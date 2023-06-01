@@ -9,7 +9,7 @@ public class menuOperaciones {
     
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        String menu = " MENU\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir";
+        String menu = "*MENU\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir";
                 
         System.out.print("Ingrese cantidad A > ");
         int numA = leer.nextInt();

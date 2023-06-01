@@ -20,14 +20,13 @@ public class rs232 {
                 } else {
                     mal ++;
                 }
-            }
-            else {
+            } else {
                 mal ++;
             }
             if (msg.equals("&&&&&")) {
                 logged = false;
             }
         } while (logged);
-        System.out.println("Lecturas Correctas: " + bien + "Incorrectas: " + mal);
+        System.out.println("Lecturas Correctas: " + bien + "  Incorrectas: " + mal);
     }
 }
