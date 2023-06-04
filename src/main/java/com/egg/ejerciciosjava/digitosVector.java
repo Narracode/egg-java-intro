@@ -12,6 +12,7 @@ public class digitosVector {
         System.out.print("Ingrese la dimension del vector > ");
         int n = leer.nextInt();
         int[] vector=new int[n];
+        
         vector = rellenarVector(vector,n);
         mostrarVector(vector);
         contarDigitosVector(vector);
@@ -45,6 +46,7 @@ public class digitosVector {
             + d3 + " Numeros de 3 digitos\n" + d4 + " Numeros de 4 digitos\n"
             + d5 + " Numeros de 5 digitos\n");
     }
+    
     public static int[] rellenarVector(int v[], int k) {
         for (int i=0; i < k; i++) {
             v[i]= (int) ((Math.random()*10)
@@ -62,11 +64,11 @@ public class digitosVector {
             dig++;
             } while (n > 9);
         }
-
         return dig;
     }
     
     public static void mostrarVector(int[] v) {
+        System.out.println("Los valores dentro del Vector: ");
         String aux="";
         for (int valor : v) {
             aux = aux + valor + " ";
