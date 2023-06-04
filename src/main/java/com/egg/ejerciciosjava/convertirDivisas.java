@@ -9,13 +9,13 @@ public class convertirDivisas {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         boolean logged = true;
-        String menu = "\n*Divisas\nL- A libras\nU- A Dolares\nY- A Yenes\nS- Salir";
+        String menu = "*Divisas\nL- A libras\nU- A Dolares\nY- A Yenes\nS- Salir";
         
         System.out.print("¿Cuantos Euros traes? > ");
         double eur = leer.nextDouble();
 
         do {
-            System.out.println(eur + " Euros");
+            System.out.println("\n" + eur + " Euros");
             System.out.println(menu);
             System.out.print("Ingrese Opcion > ");
             String divisa = leer.next();
