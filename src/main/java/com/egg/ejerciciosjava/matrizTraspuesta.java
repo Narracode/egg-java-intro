@@ -11,9 +11,9 @@ public class matrizTraspuesta {
 
         
         rellenarMatriz(matriz,n,n);
-        System.out.println("Matriz A:");
+        System.out.println("Matriz A (original)");
         mostrarMatriz(matriz);
-        System.out.println("\nMatriz B");
+        System.out.println("\nMatriz B (traspuesta)");
         transponMatriz(matriz,n,n);
     }
     
