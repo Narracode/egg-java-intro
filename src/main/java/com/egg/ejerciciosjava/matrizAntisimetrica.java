@@ -18,10 +18,9 @@ public class matrizAntisimetrica {
     }
 
     public static void esAntisimetrica(int[][] mA, int[][] mB) {
-        /* Este metodo comprueba que cada valor en la matriz a comparar es el
-        negativo de la matriz original */
         int i = 0, n = mA.length;
         boolean antiSim = true;
+        
         do {
             int j=0;
             do {
