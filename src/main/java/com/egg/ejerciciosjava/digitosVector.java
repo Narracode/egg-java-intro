@@ -24,21 +24,11 @@ public class digitosVector {
         for (int cantidad : v) {
             int digitos = contarDigitos(cantidad);
             switch(digitos) {
-                case 1:
-                    d1++;
-                break;
-                case 2:
-                    d2++;
-                break;
-                case 3:
-                    d3++;
-                break;
-                case 4:
-                    d4++;
-                break;
-                case 5:
-                    d5++;
-                break;
+                case 1: d1++;break;
+                case 2: d2++;break;
+                case 3: d3++;break;
+                case 4: d4++;break;
+                case 5: d5++;break;
             }
         }
         System.out.println("En el vector se encuentran:\n"
