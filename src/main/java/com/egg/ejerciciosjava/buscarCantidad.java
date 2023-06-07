@@ -21,6 +21,10 @@ public class buscarCantidad {
         System.out.println(aux);
     }
     
+    public static void asiNo() {
+        System.out.println("\nInvalido, intenta otra vez\n");
+    }
+    
     public static int leerCantidad(int min, int max) {
         Scanner leer = new Scanner(System.in);
         System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
