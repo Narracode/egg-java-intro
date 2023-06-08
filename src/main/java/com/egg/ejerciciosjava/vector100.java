@@ -8,10 +8,9 @@ public class vector100 {
     public static void main(String[] args) {
         int centena[] = new int[100];
         
-        for (int num = 0; num < 99; num++) {
+        for (int num = 0; num < centena.length; num++) {
             centena[num]=num+1;
         }
-        centena[99] = 100;
         mostrarVector(centena);
     }
     public static void mostrarVector(int[] v) {
