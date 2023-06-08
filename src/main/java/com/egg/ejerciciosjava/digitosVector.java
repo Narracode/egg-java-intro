@@ -7,15 +7,31 @@ import java.util.Scanner;
  */
 public class digitosVector {
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
-        
-        System.out.print("Ingrese la dimension del vector > ");
-        int n = leer.nextInt();
+        System.out.println("Ingrese la dimension del vector");
+        int n = leerCantidad(1,40);
         int[] vector=new int[n];
         
         vector = rellenarVector(vector,n);
         mostrarVector(vector);
         contarDigitosVector(vector);
+    }
+    
+    public static void asiNo() {
+        System.out.println("\nInvalido, intenta otra vez\n");
+    }
+    
+    public static int leerCantidad(int min, int max) {
+        Scanner leer = new Scanner(System.in);
+        int x = 0;
+        
+        do {
+            System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
+            x = leer.nextInt();
+            if (x<min || x>max) {
+                asiNo();
+            }
+        } while (x<min || x>max);
+        return x;
     }
     
     public static void contarDigitosVector(int v[]) {

@@ -8,10 +8,8 @@ import java.util.Scanner;
 public class cuadradoN {
 
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
-        
         System.out.println("Dame una dimension");
-        int n = leer.nextInt();
+        int n = leerCantidad(2,99);
         
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -24,4 +22,23 @@ public class cuadradoN {
             System.out.println("");
         }
     }
+
+    public static void asiNo() {
+        System.out.println("\nInvalido, intenta otra vez\n");
+    }
+    
+    public static int leerCantidad(int min, int max) {
+        Scanner leer = new Scanner(System.in);
+        int x = 0;
+        
+        do {
+            System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
+            x = leer.nextInt();
+            if (x<min || x>max) {
+                asiNo();
+            }
+        } while (x<min || x>max);
+        return x;
+    }
+    
 }

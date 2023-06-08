@@ -47,9 +47,9 @@ public class encontrarSubmatriz {
                                 inicio = i+","+j;
                             }
                             pJ++;
-                        } while (pJ < q && encontrado);
+                        } while (pJ < q);
                         pI++;
-                    } while (pI < q && encontrado);
+                    } while (pI < q);
                 }
             }
         }

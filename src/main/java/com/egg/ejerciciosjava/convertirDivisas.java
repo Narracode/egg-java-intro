@@ -12,7 +12,7 @@ public class convertirDivisas {
         String menu = "*Divisas\nL- A libras\nU- A Dolares\nY- A Yenes\nS- Salir";
         
         System.out.print("¿Cuantos Euros traes? > ");
-        double eur = leer.nextDouble();
+        double eur = leerCantidad(0.1,99999.99);
 
         do {
             System.out.println("\n" + eur + " Euros");
@@ -25,7 +25,25 @@ public class convertirDivisas {
             }
             convertir(eur,divisa);
         } while (logged);
-    } 
+    }
+    public static void asiNo() {
+        System.out.println("\nInvalido, intenta otra vez\n");
+    }
+    
+    public static double leerCantidad(double min, double max) {
+        Scanner leer = new Scanner(System.in);
+ 
+        double x = 0;
+        do {
+            System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
+            x = leer.nextInt();
+            if (x<min || x>max) {
+                asiNo();
+            }
+        } while (x<min || x>max);
+        return x;
+    }
+    
     public static void convertir(double e, String d) {
         switch(d) {
             case "l":

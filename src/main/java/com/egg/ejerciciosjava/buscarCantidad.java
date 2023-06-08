@@ -5,11 +5,11 @@ public class buscarCantidad {
     public static void main(String[] args) {
         int[] vector;
         
-        System.out.print("Dimension del vector");
+        System.out.println("Dimension del vector");
         vector = new int[leerCantidad(1,50)];
         llenarVector(vector);
         mostrarVector(vector);
-        System.out.print("Numero a buscar");
+        System.out.println("Numero a buscar");
         buscarNumero(vector, leerCantidad(0,10));
     }
     
@@ -27,14 +27,15 @@ public class buscarCantidad {
     
     public static int leerCantidad(int min, int max) {
         Scanner leer = new Scanner(System.in);
-        System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
         int x = 0;
+        
         do {
+            System.out.print("Introduce un numero entre "+min+" y "+max+" > ");
             x = leer.nextInt();
-            if (x<min && x>max) {
+            if (x<min || x>max) {
                 asiNo();
             }
-        } while (x<min && x>max);
+        } while (x<min || x>max);
         return x;
     }
     
