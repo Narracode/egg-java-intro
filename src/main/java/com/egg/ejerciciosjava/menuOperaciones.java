@@ -47,7 +47,7 @@ public class menuOperaciones {
                 }
                 break;
                 default:
-                    System.out.println("Opcion Invalida");
+                    asiNo();
             }
         } while (opcion != 5);
     }
